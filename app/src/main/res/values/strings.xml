@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="app_txtIngreso1">Ingrese un numero</string>
+    <string name="app_txtIngreso2">Ingrese otro numero</string>
+
+    <string name="app_txtSuma">Suma</string>
+    <string name="app_txtResta">Resta</string>
+    <string name="app_txtMultiplicacion">Producto</string>
+    <string name="app_txtDivision">Dividir</string>
+
+    <string name="app_txtSalida">El resultado es: </string>
+</resources>
