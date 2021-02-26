@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         btnDividir = (Button) findViewById(R.id.btnDividir);
     }
 
+    /*
+    Metodos suma, resta, multiplicacion y division
+    son los invocados por los Button y estos
+    llaman al metodo resultado quien es el que
+    contiene la logica
+     */
     public void suma(View v){
         resultado(SUMA);
     }
@@ -52,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         resultado(DIVISION);
     }
 
+    /*
+    Este metodo valida que los TextView no esten vacios y luego
+    procede a hacer cada una de las operaciones
+     */
     private void resultado(String operacion){
         String n1 = txtNumber1.getText().toString();
         String n2 = txtNumber2.getText().toString();
@@ -88,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    Imprime resultado de cada operacion en un TextView
+     */
     private void imprimirResultado(Object result){
         String out = txtSalida.getText().toString().split(":")[0];
         String res = String.valueOf(result);
@@ -97,6 +110,11 @@ public class MainActivity extends AppCompatActivity {
         txtNumber2.setText("");
     }
 
+    /*
+    Dialogo que se muestra cuando los TextView en los que
+    se ingresan los numeros estan vacios o cuando se
+    divide por cero
+     */
     private void mostrarDialogo(String result){
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Cuidado !");
