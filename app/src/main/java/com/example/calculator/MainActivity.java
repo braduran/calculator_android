@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case DIVISION:
                     if(b == 0) {
-                        mostrarDialogo("El segundo valor no puede ser cero");
+                        mostrarDialogo("El segundo valor de la división no puede ser cero");
                     }else {
                         resultado = a/b;
                         imprimirResultado(resultado);
@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void imprimirResultado(Object result){
         String out = txtSalida.getText().toString().split(":")[0];
-        System.out.println(out);
         String res = String.valueOf(result);
 
         txtSalida.setText(String.format("%s: %s", out, res));
